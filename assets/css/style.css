@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -9,14 +11,50 @@ nav {
 }
 
 .elevacao {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombreamento sutil */
-  transition: box-shadow 0.3s ease; /* Adicione uma transição suave para a sombra */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 .elevacao:hover {
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Aumente a sombra ao passar o mouse */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+.font-small {
+  font-size: 12px;
+  margin: 0px -10px;
+}
+
+.row-col {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .row-col {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+}
+
+.row-col-small {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 668px) {
+  .row-col-small {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+}
+@media (max-width: 668px) {
+  .sm-text-center {
+    text-align: center;
+    /* justify-content: center; */
+  }
+}
 .up {
   position: fixed;
   bottom: 20px;
@@ -72,12 +110,27 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
+/* header */
+
+.footer-a a{
+  color: #cccccc;
+
+}
+
+.footer-a a:hover {
+  color: #cb3337;
+  /* background-color: red; */
+  transition: all .4s;
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
   background: #212529;
   z-index: 10;
+  border-bottom: solid 2px transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-line {
@@ -124,8 +177,7 @@ h3 {
 
 #cards {
   padding: 5% 7%;
-    /* margin: 20px 0px; */
-
+  /* margin: 20px 0px; */
 }
 
 #contact .col-md-6:nth-child(1) {
@@ -215,14 +267,74 @@ h3 {
   height: 30px;
   background-color: #cb3337;
   color: #fff;
-  border: solid 1px #fff;
+  border: solid 1px transparent;
   border-radius: 20px;
   padding: 6px;
 }
 .icone-redes-sociais i:hover {
-  background-color: #212529;
-  border: solid 1px #212529;
+  background-color: #373a3e;
+  border: solid 1px #4d5053;
   /* color: #212529; */
 
   transition: all 0.4s;
 }
+
+.logo-footer {
+  width: 10rem;
+}
+/* ICONE WHATSAPP */
+
+.wa::after {
+  animation-delay: 0.4s;
+}
+.wa::after,
+.wa::before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  border: 3px solid #0ba360;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  -webkit-border-radius: 50%;
+  animation: WaveWhatsApp 1.3s ease infinite;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.wa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 40px;
+  width: 45px;
+  height: 45px;
+  bottom: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #0ba360;
+  z-index: 1000;
+}
+
+.wa:hover {
+  background: #128c7e;
+  transition: background 0.3s ease;
+}
+@keyframes WaveWhatsApp {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* FIM ICONE WHATSAPP */
