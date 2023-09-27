@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
             crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
 
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -46,8 +46,8 @@
             <nav class="navbar px-5 navbar-expand-sm navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <a class="navbar-brand m-0" href="#"><img
-                            src="assets/images/logo.png" width="100" alt></a>
+                    <a class="navbar-brand m-0" href="../../index.html"><img
+                            src="../images/logo.png" width="100" alt></a>
                     <button class="navbar-toggler border-0" type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup"
@@ -58,10 +58,14 @@
                     <div class="collapse navbar-collapse"
                         id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link text-dark ms-3" href="#sobre-nos">Sobre
-                                Nós</a>
-                            <a class="nav-link text-dark ms-3" href="#artigos">Artigos</a>
-                            <a class="nav-link text-dark ms-3" href="#contato">Contato</a>
+                            <a class="nav-link text-dark ms-3"
+                                href="../artigos/marketing.html">Marketing</a>
+                            <a class="nav-link text-dark ms-3"
+                                href="../artigos/tecnologia.html">Tecnologia</a>
+                            <a class="nav-link text-dark ms-3"
+                                href="../artigos/contabilidade.html">Contabilidade</a>
+                            <a class="nav-link text-dark ms-3"
+                                href="../artigos/vendas.html">Vendas</a>
                         </div>
                     </div>
                 </div>
@@ -70,9 +74,56 @@
 
         <main>
 
-            <div class="icone-redes-sociais up">
-                <a href="mailto:proposta@anexoconsultoria.com.br"
-                    alt="redes sociais"><i class="fa-solid fa-angles-up"></i></a>
+            <!-- cards -->
+            <div id="cards" class="container-fluid text-dark bg-light">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div
+                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
+                            <div class="card-body card-artigo">
+                                <img src="https://melloadvogados.com.br/wp-content/uploads/2021/02/advogado-avenida-paulista.jpg">
+                            </div>
+                            <p class="card-header text-center">Lorem ipsum dolor
+                                sit
+                                amet,
+                                consectetur adipisicing elit </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div
+                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
+                            <div class="card-body card-artigo">
+                                <img src="https://melloadvogados.com.br/wp-content/uploads/2021/02/advogado-avenida-paulista.jpg">
+                            </div>
+                            <p class="card-header text-center">Lorem ipsum dolor
+                                sit
+                                amet,
+                                consectetur adipisicing elit </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div
+                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
+                            <div class="card-body card-artigo">
+                                <img src="https://melloadvogados.com.br/wp-content/uploads/2021/02/advogado-avenida-paulista.jpg">
+                            </div>
+                            <p class="card-header text-center">Lorem ipsum dolor
+                                sit
+                                amet,
+                                consectetur adipisicing elit </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div id="verMaisContainer"
+                            class=" rounded-3 div-artigo d-flex justify-content-end">
+                            <button id="verMaisBtn" class="botao-vermelho-medio">Ver
+                                Mais</button>
+                        </div>
+                    </div>
+                    <div id="cardsContainer">
+                        <!-- Os cards serão adicionados aqui -->
+                    </div>
+                </div>
             </div>
 
         </main>
@@ -99,6 +150,6 @@
             </div>
         </footer>
 
-        <script src="assets/js/index.js"></script>
+        <script src="../js/artigos.js"></script>
     </body>
 </html>
