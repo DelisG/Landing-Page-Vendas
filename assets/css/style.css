@@ -1,5 +1,6 @@
 main {
-  margin-top: 80px;
+  margin-top: 60px;
+  background-color: #fff;
 }
 
 * {
@@ -118,6 +119,17 @@ h3 {
   padding-top: 60px;
 }
 
+#seachbar input {
+  background-color: #eeeeee;
+}
+
+@media (max-width: 768px) {
+  #seachbar {
+    margin-top: -25px;
+    padding: 0px 20px;
+  }
+}
+
 /* header */
 
 .footer-a a {
@@ -234,8 +246,11 @@ h3 {
     justify-content: space-between;
   }
 }
+/* Artigos  */
 #artigos {
   padding: 5% 7%;
+  position: relative;
+  display: inline-block;
 }
 .div-img-artigos {
   width: 333px;
@@ -247,20 +262,29 @@ h3 {
   height: 250px;
 }
 
-/* TOP ARTIGOS */
-
-
-
-.top-artigos h2{
-    color: #cb3337;
+.category {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #cb3337;
+  border-radius: 20px;
+  padding: 2px 10px;
+  color: white;
+  z-index: 5;
 }
 
-.card-top-artigos{
+/* TOP ARTIGOS */
+
+.top-artigos h2 {
+  color: #cb3337;
+}
+
+.card-top-artigos {
   border-left: solid 3px #cb3337;
   margin: 8px 0px;
 }
 
-.top-artigos p{
+.top-artigos p {
   color: gray;
 }
 
