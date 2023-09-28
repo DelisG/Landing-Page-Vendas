@@ -246,12 +246,19 @@ h3 {
     justify-content: space-between;
   }
 }
+
 /* Artigos  */
+
 #artigos {
   padding: 5% 7%;
   position: relative;
   display: inline-block;
 }
+
+#artigos h3{
+  color: #cb3337;
+}
+
 .div-img-artigos {
   width: 333px;
   height: 250px;
@@ -373,6 +380,7 @@ h3 {
   background: #128c7e;
   transition: background 0.3s ease;
 }
+
 @keyframes WaveWhatsApp {
   0% {
     transform: scale(0.5);
