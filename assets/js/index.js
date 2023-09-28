@@ -28,40 +28,67 @@ verMaisBtn.addEventListener("click", function () {
 function criarCard(imagem, texto) {
   var cardHTML = `
             <div class="row mt-5">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div
                             class="card rounded-3 elevacao bg-light text-dark div-artigo">
                             <div class="card-body card-artigo">
                                 <img src="assets/images/cultura-entenda.jpg">
+                                <p class="category">Categoria</p>
+
                             </div>
-                            <p class="card-header text-center">Lorem ipsum dolor
-                                sit
-                                amet,
-                                consectetur adipisicing elit </p>
+
+                            <div class="p-4">
+                                <h4 class=" ">Lorem ipsum dolor sit
+                                    amet, consectetur adipisicing elit </h4>
+                                <p class="py-2">Lorem ipsum dolor
+                                    sit amet, consectetur adipisicing elit lorem
+                                    ipsum dolor
+                                    sit amet, consectetur adipisicing elit </p>
+                                <a href="assets/artigos/ver-mais.html"
+                                    class="text-decoration-none">Ver mais</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div
                             class="card rounded-3 elevacao bg-light text-dark div-artigo">
                             <div class="card-body card-artigo">
                                 <img src="assets/images/cultura-entenda.jpg">
+                                <p class="category">Categoria</p>
+
                             </div>
-                            <p class="card-header text-center">Lorem ipsum dolor
-                                sit
-                                amet,
-                                consectetur adipisicing elit </p>
+
+                            <div class="p-4">
+                                <h4 class=" ">Lorem ipsum dolor sit
+                                    amet, consectetur adipisicing elit </h4>
+                                <p class="py-2">Lorem ipsum dolor
+                                    sit amet, consectetur adipisicing elit lorem
+                                    ipsum dolor
+                                    sit amet, consectetur adipisicing elit </p>
+                                <a href="assets/artigos/ver-mais.html"
+                                    class="text-decoration-none">Ver mais</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 ">
                         <div
                             class="card rounded-3 elevacao bg-light text-dark div-artigo">
                             <div class="card-body card-artigo">
                                 <img src="assets/images/cultura-entenda.jpg">
+                                <p class="category">Categoria</p>
+
                             </div>
-                            <p class="card-header text-center">Lorem ipsum dolor
-                                sit
-                                amet,
-                                consectetur adipisicing elit </p>
+
+                            <div class="p-4">
+                                <h4 class=" ">Lorem ipsum dolor sit
+                                    amet, consectetur adipisicing elit </h4>
+                                <p class="py-2">Lorem ipsum dolor
+                                    sit amet, consectetur adipisicing elit lorem
+                                    ipsum dolor
+                                    sit amet, consectetur adipisicing elit </p>
+                                <a href="assets/artigos/ver-mais.html"
+                                    class="text-decoration-none">Ver mais</a>
+                            </div>
                         </div>
                     </div>
                 </div>
