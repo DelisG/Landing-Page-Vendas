@@ -1,8 +1,8 @@
 $(window).scroll(function () {
   if ($(this).scrollTop() > 10) {
-    $("nav").addClass("");
+    $("nav").addClass("bg-light");
   } else {
-    $("nav").removeClass("");
+    $("nav").removeClass("bg-light");
   }
 });
 

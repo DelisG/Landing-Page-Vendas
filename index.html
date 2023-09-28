@@ -42,8 +42,8 @@
 
     </head>
     <body>
-        <header>
-            <nav class="navbar px-5 navbar-expand-sm navbar-light bg-light">
+        <header class="bg-light">
+            <nav class="navbar px-5 navbar-expand-sm navbar-light">
                 <div class="container-fluid">
 
                     <a class="navbar-brand m-0" href="index.html"><img
@@ -72,137 +72,81 @@
             </nav>
         </header>
 
-        <main>
-            <!-- <div id="hero" class="container-fluid text-light">
-            <div id="header" class="row container-fluid text-light">
-                <div class="col-md-6 text-center text-md-start">
-                    <h1 class="header-line">THERAPEUTIC MASSAGE</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reiciendis sed, illo tenetur beatae quod?</p>        
+        <main class="bg-light">
+
+            <!-- seachbar -->
+            <section>
+                <div class="container" id="seachbar">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="input-group pt-3">
+                                <input type="text" class="form-control p-3"
+                                    placeholder="Pesquisar por...">
+                                <button class="btn btn-danger p-3" type="button">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div> -->
+            </section>
 
             <!-- artigos -->
             <section id="artigos"
-                class="container-fluid text-dark bg-light">
+                class="container-fluid text-dark">
                 <div class="row d-flex justify-content-around my-2">
                     <div
                         class="col-md-12 d-flex justify-content-between flex-row
                         align-items-center p-1">
                         <div class="row">
-                            <div class="col-sm-8">
-                                <div
-                                    class="p-1 gap-1 card col-sm justify-content-between alinhamento-row-col elevacao">
-                                    <div class="div-img-artigos">
-                                        <img
-                                            src="assets/images/blog-3.webp"
-                                            alt>
-                                    </div>
 
-                                    <div
-                                        class="col-sm d-flex justify-content-around flex-column">
-                                        <h5>Lorem ipsum dolor sit</h5>
-                                        <p class>Lorem ipsum dolor sit amet
-                                            consectetur
-                                            adipisicing elit. Dolor at delectus
-                                            officia
-                                            debitis,
-                                            incidunt eum commodi ut mollitia
-                                            magni.
-                                            Sunt
-                                            odio
-                                            ipsa
-                                            voluptate minima architecto sit
-                                            fugiat
-                                            ea
-                                            repudiandae
-                                            eligendi.</p>
-                                        <div class="artigos-rodape">
-                                            <p>27/08/2025 as 14:00h</p>
-                                            <a
-                                                href="assets/artigos/ver-mais.html"><button
-                                                    class="botao-vermelho-pequeno">Ver
-                                                    mais</button></a>
-                                        </div>
+                            <div class="col-sm-6">
+                                <div class="card elevacao">
+                                    <img src="assets/images/cultura-entenda.jpg"
+                                        class="card-img-top w-100 h-100" alt="Imagem">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-danger p-2"><strong>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing</strong></h3>
                                     </div>
                                 </div>
-
-                                <div
-                                    class="p-1 gap-1 card col-sm justify-content-between alinhamento-row-col mt-2 elevacao">
-                                    <div class="div-img-artigos">
-                                        <img
-                                            src="assets/images/cultura-valor.jpeg"
-                                            alt>
-                                    </div>
-
-                                    <div
-                                        class="col-sm d-flex justify-content-around flex-column">
-                                        <h5>Lorem ipsum dolor sit</h5>
-                                        <p class>Lorem ipsum dolor sit amet
-                                            consectetur
-                                            adipisicing elit. Dolor at delectus
-                                            officia
-                                            debitis,
-                                            incidunt eum commodi ut mollitia
-                                            magni.
-                                            Sunt
-                                            odio
-                                            ipsa
-                                            voluptate minima architecto sit
-                                            fugiat
-                                            ea
-                                            repudiandae
-                                            eligendi.</p>
-                                        <div class="artigos-rodape">
-                                            <p>27/08/2025 as 14:00h</p>
-                                            <a
-                                                href="assets/artigos/ver-mais.html"><button
-                                                    class="botao-vermelho-pequeno">Ver
-                                                    mais</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
 
                             <div
-                                class="col-sm-4  d-flex justify-content-start gap-2 flex-column">
-                                <div class="card p-1 elevacao">
-                                    <h5>Titulo Titulo Titulo</h5>
-                                    <p>descricao descricao descricao descricao
-                                        descricao
-                                        descricao descricao descricao descricao
-                                        descricao
-                                    </p>
+                                class="col-sm-6  d-flex justify-content-start gap-2 flex-column top-artigos px-4">
+                                <h2><strong>Top Artigos</strong></h2>
+                                <div class="card-top-artigos px-3 elevacao">
+                                    <h5>Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dolor at delectus
+                                        officia debitis, incidunt eum commodi ut
+                                        mollitia magni. </p>
                                 </div>
 
-                                <div class="card p-1 elevacao">
-                                    <h5>Titulo Titulo Titulo</h5>
-                                    <p>descricao descricao descricao descricao
-                                        descricao
-                                        descricao descricao descricao descricao
-                                        descricao
-                                    </p>
+                                <div class="card-top-artigos px-3 elevacao">
+                                    <h5>Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dolor at delectus
+                                        officia debitis, incidunt eum commodi ut
+                                        mollitia magni. </p>
                                 </div>
 
-                                <div class="card p-1 elevacao">
-                                    <h5>Titulo Titulo Titulo</h5>
-                                    <p>descricao descricao descricao descricao
-                                        descricao
-                                        descricao descricao descricao descricao
-                                        descricao
-                                    </p>
+                                <div class="card-top-artigos px-3 elevacao">
+                                    <h5>Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dolor at delectus
+                                        officia debitis, incidunt eum commodi ut
+                                        mollitia magni. </p>
                                 </div>
-                                <div class="card p-1 elevacao">
-                                    <h5>Titulo Titulo Titulo</h5>
-                                    <p>descricao descricao descricao descricao
-                                        descricao
-                                        descricao descricao descricao descricao
-                                        descricao
-                                    </p>
+                                <div class="card-top-artigos px-3 elevacao">
+                                    <h5>Lorem ipsum dolor sit</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Dolor at delectus
+                                        officia debitis, incidunt eum commodi ut
+                                        mollitia magni. </p>
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -223,8 +167,9 @@
                     </div> -->
                 </div>
             </section>
+
             <!-- cards -->
-            <div id="cards" class="container-fluid text-dark bg-light">
+            <div id="cards" class="container-fluid text-dark">
                 <div class="row">
                     <div class="col-lg-4">
                         <div
@@ -274,6 +219,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- icone whatsapp pulse -->
             <div>
                 <a
@@ -305,10 +251,9 @@
                         <p>(81) 3019-6619 / 3132-9661 / 98202-6619 <br>proposta@anexoconsultoria.com.br</p>
                     </div>
                 </div>
-                <div >
+                <div>
                     <div class="footer-a ms-auto">
-                        <p class="text-light text-center"
-                           ><strong>CONTEÚDOS</strong></p>
+                        <p class="text-light text-center"><strong>CONTEÚDOS</strong></p>
                         <a class="nav-link ms-3"
                             href="assets/artigos/marketing.html">Marketing</a>
                         <a class="nav-link ms-3"

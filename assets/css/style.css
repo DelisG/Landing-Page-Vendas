@@ -1,4 +1,6 @@
-
+main {
+  margin-top: 80px;
+}
 
 * {
   margin: 0;
@@ -7,7 +9,7 @@
 
 nav {
   transition: all 0.5s;
-  z-index: 1;
+  z-index: 10;
 }
 
 .elevacao {
@@ -110,17 +112,22 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
+/* seachbar */
+
+#seachbar {
+  padding-top: 60px;
+}
+
 /* header */
 
-.footer-a a{
+.footer-a a {
   color: #cccccc;
-
 }
 
 .footer-a a:hover {
   color: #cb3337;
   /* background-color: red; */
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .navbar {
@@ -128,7 +135,7 @@ h3 {
   position: sticky;
   top: -1px;
   background: #212529;
-  z-index: 10;
+  z-index: 100;
   border-bottom: solid 2px transparent;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -239,6 +246,24 @@ h3 {
   width: 333px;
   height: 250px;
 }
+
+/* TOP ARTIGOS */
+
+
+
+.top-artigos h2{
+    color: #cb3337;
+}
+
+.card-top-artigos{
+  border-left: solid 3px #cb3337;
+  margin: 8px 0px;
+}
+
+.top-artigos p{
+  color: gray;
+}
+
 .alinhamento-row-col:hover img {
   transform: scale(1.1);
   transition: transform 0.5s ease;
