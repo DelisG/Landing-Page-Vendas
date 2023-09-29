@@ -270,6 +270,12 @@ nav {
   height: 250px;
 }
 
+#resultados {
+  z-index: 2;
+  text-align: center;
+  font-size: 20px;
+}
+
 .category {
   position: absolute;
   top: 12px;
