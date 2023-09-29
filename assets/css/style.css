@@ -47,6 +47,20 @@ main {
     flex-direction: column;
   }
 }
+
+.row-col-gr {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1068px) {
+  .row-col-gr {
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+}
+
 @media (max-width: 668px) {
   .sm-text-center {
     text-align: center;
@@ -162,6 +176,7 @@ nav {
   position: relative;
   padding: 0;
   overflow: hidden;
+  
 }
 
 .card-artigo img {
@@ -172,7 +187,10 @@ nav {
   transform: scale(1); /* Redefine o zoom da imagem para o tamanho original */
   transition: transform 0.3s ease;
 }
-
+.div-artigo{
+  flex: 1;
+  width: 100%;
+}
 .div-artigo:hover img {
   transform: scale(1.1);
   transition: transform 0.3s ease;
@@ -187,7 +205,12 @@ nav {
 #cards a{
   color: #cb3337;
   font-weight: bold;
+  font-family: "roboto", sans-serif;
   font-size: 18px;
+}
+#cards a:hover{
+  color: #000;
+  transition: all .3s;
 }
 
 #hero {
@@ -295,11 +318,12 @@ nav {
 
 .card-top-artigos {
   border-left: solid 3px #cb3337;
-  margin: 8px 0px;
+  margin: 2px 0px;
 }
 
 .top-artigos p {
   color: gray;
+  margin: -2px 0px;
 }
 
 .alinhamento-row-col:hover img {
