@@ -27,76 +27,63 @@ verMaisBtn.addEventListener("click", function () {
 
 function criarCard(imagem, texto) {
   var cardHTML = `
-            <div class="row mt-5">
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="assets/images/cultura-entenda.jpg">
-                                <p class="category">Categoria</p>
+              <div class="row mt-5 row-col-gr flex-wrap gap-3">
+                      <div
+                          class=" col-lg-4 card rounded-3 elevacao div-artigo">
+                          <div class="card-body card-artigo">
+                              <img
+                                  src="https://storage.googleapis.com/meetime-blog/wp-content/uploads/2020/08/Fechamento-de-neg%C3%B3cios-como-construir-efetivamente-seu-discurso-de-vendas-roteiro.png">
+                              <p class="category">Vendas</p>
 
-                            </div>
+                          </div>
 
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="assets/images/cultura-entenda.jpg">
-                                <p class="category">Categoria</p>
+                          <div class="p-4">
+                              <h4 class=" ">Negociação de Contratos Vencedores</h4>
+                              <p class="py-2">Domine a arte da negociação de contratos e aprenda a fechar acordos que beneficiem todas as partes envolvidas.</p>
+                              <a
+                                  href="https://contabilidaderecife.com/artigo.html?titulo=Negocia%C3%A7%C3%A3o%20de%20Contratos%20Vencedores"
+                                  class="text-decoration-none">Ver mais</a>
+                          </div>
+                      </div>
+                      <div
+                          class=" col-lg-4 card rounded-3 elevacao div-artigo">
+                          <div class="card-body card-artigo">
+                              <img
+                                  src="https://imagens.ebc.com.br/NdkjXp5MVYic-6AxUEk5vbDLTA0=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/mca_abr_21031913349.jpg?itok=CoVdCaT2">
+                              <p class="category">Contabilidade</p>
 
-                            </div>
+                          </div>
 
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="assets/images/cultura-entenda.jpg">
-                                <p class="category">Categoria</p>
+                          <div class="p-4">
+                              <h4 class=" ">Imposto de Renda 2023: O que você precisa saber</h4>
+                              <p class="py-2">Fique por dentro das últimas mudanças no Imposto de Renda 2023 e saiba como se preparar para a declaração.</p>
+                              <a
+                                  href="https://contabilidaderecife.com/artigo.html?titulo=Imposto%20de%20Renda%202023%3A%20O%20que%20voc%C3%AA%20precisa%20saber"
+                                  class="text-decoration-none">Ver mais</a>
+                          </div>
+                      </div>
+                      <div
+                          class=" col-lg-4 card rounded-3 elevacao div-artigo">
+                          <div class="card-body card-artigo">
+                              <img
+                                  src="https://blog.vindi.com.br/wp-content/uploads/2020/11/melhores-plataformas-de-pagamento-online.png">
+                              <p class="category">Tecnologia</p>
 
-                            </div>
+                          </div>
 
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        `;
+                          <div class="p-4">
+                              <h4 class=" ">EInovações em Pagamentos Online</h4>
+                              <p class="py-2">Explore as últimas inovações em pagamentos online que podem melhorar a experiência do cliente.</p>
+                              <a
+                                  href="https://contabilidaderecife.com/artigo.html?titulo=Inova%C3%A7%C3%B5es%20em%20Pagamentos%20Online"
+                                  class="text-decoration-none">Ver mais</a>
+                          </div>
+                      </div>
+                  </div>
+          `;
   return cardHTML;
 }
 
-// Função para adicionar os cards ao container
 function adicionarCards() {
   var cardsContainer = document.getElementById("cardsContainer");
 
@@ -108,20 +95,19 @@ function adicionarCards() {
   });
 }
 
-// Adicionar evento de clique ao botão "Ver Mais"
 var verMaisBtn = document.getElementById("verMaisBtn");
 verMaisBtn.addEventListener("click", function () {
   adicionarCards(); // Chama a função para adicionar os cards quando o botão "Ver Mais" é clicado
   verMaisBtn.style.display = "none"; // Oculta o botão "Ver Mais"
 });
 
-// itens pesquisa
 
 const artigos = [
   {
     imagem:
-      "https://img.freepik.com/fotos-gratis/esfera-azul-brilhante-segurada-por-mao-humana-gerada-por-ia_188544-41033.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
+      "https://neilpatel.com/wp-content/uploads/2023/06/marketing-digital.jpg",
+    imagem2:
+      "https://blog.anhanguera.com/wp-content/uploads/2021/01/post_thumbnail-19e853b7412b4114d02a2009189bf891.jpeg",
     titulo: "Estratégias de Marketing Digital",
     subtitulo: "Maximizando seu alcance online",
     descricao:
@@ -136,8 +122,9 @@ const artigos = [
 
   {
     imagem:
-      "https://img.freepik.com/fotos-gratis/esfera-azul-brilhante-segurada-por-mao-humana-gerada-por-ia_188544-41033.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
+      "https://www.funildevendas.com.br/wp-content/uploads/2021/07/Vendas-B2B-Vendas-racionais.jpg",
+    imagem2:
+      "https://respostas.sebrae.com.br/wp-content/uploads/2020/11/10-estrat%C3%A9gias-de-inbound-marketing-para-empresas-b2b.jpg",
     titulo: "Tendências em Vendas B2B",
     subtitulo: "O que esperar no próximo ano",
     descricao:
@@ -147,13 +134,14 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre tendências em vendas B2B, como exemplos de empresas que adotaram com sucesso novas tendências e suas experiências. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
     data: "20/09/2023",
-    categoria: "vendas",
+    categoria: "Vendas",
   },
 
   {
     imagem:
       "https://img.freepik.com/fotos-gratis/esfera-azul-brilhante-segurada-por-mao-humana-gerada-por-ia_188544-41033.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
+    imagem2:
+      "https://blog.cielo.com.br/wp-content/uploads/2022/03/cielo-tecnologia-inovacao-negocios.jpg",
     titulo: "Inovações em Tecnologia",
     subtitulo: "As últimas novidades do mundo da tecnologia",
     descricao:
@@ -163,23 +151,23 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre as inovações em tecnologia, como exemplos de produtos ou empresas que estão liderando inovações. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
     data: "25/09/2023",
-    categoria: "tecnologia",
+    categoria: "Tecnologia",
   },
-
   {
-    imagem:
-      "https://img.freepik.com/fotos-gratis/esfera-azul-brilhante-segurada-por-mao-humana-gerada-por-ia_188544-41033.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
-    titulo: "Gestão Financeira Empresarial",
-    subtitulo: "Dicas para manter suas finanças em ordem",
+    imagem1:
+      "https://www.vivendodefreela.com.br/wp-content/uploads/2019/06/finan%C3%A7as-para-aut%C3%B4nomos.jpg",
+    imagem2:
+      "https://amcontabilidadeonline.com.br/wp-content/uploads/2023/02/IMAGEM-BLOG-DPG-18.jpg",
+    titulo: "Dicas de Contabilidade para Pequenas Empresas",
+    subtitulo: "Mantenha suas finanças sob controle",
     descricao:
-      "Aprenda as melhores práticas de contabilidade e gestão financeira para garantir a saúde financeira de sua empresa.",
+      "Aprenda estratégias de contabilidade essenciais para o sucesso de pequenas empresas.",
     texto:
-      "A gestão financeira é uma parte crítica de qualquer empresa. Este artigo oferece dicas e orientações essenciais para manter suas finanças empresariais em ordem. De estratégias de orçamento a métodos de contabilidade eficazes, você encontrará conselhos práticos para garantir a estabilidade financeira de sua empresa.",
+      "A gestão financeira é crítica para o sucesso de pequenas empresas. Neste artigo, fornecemos dicas valiosas de contabilidade para manter suas finanças sob controle. De planejamento financeiro a orçamento, ajudamos você a tomar decisões informadas e a garantir a saúde financeira de sua empresa.",
     textocomplementar:
-      "No campo 'texto-complementar', você pode adicionar informações adicionais sobre gestão financeira empresarial, como exemplos de empresas que melhoraram suas finanças seguindo as dicas apresentadas. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
-    data: "10/09/2023",
-    categoria: "contabilidade",
+      "No campo 'texto-complementar', você pode adicionar informações adicionais sobre ferramentas de contabilidade úteis, formas de reduzir despesas e exemplos de pequenas empresas que obtiveram sucesso com essas dicas.",
+    data: "15/06/2023",
+    categoria: "Contabilidade",
   },
 
   {
@@ -201,8 +189,9 @@ const artigos = [
 
   {
     imagem:
-      "https://img.freepik.com/fotos-gratis/esfera-azul-brilhante-segurada-por-mao-humana-gerada-por-ia_188544-41033.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
+      "https://blog.ploomes.com/wp-content/uploads/2023/05/tecnicas-de-vendas.png",
+    imagem2:
+      "https://gestaodeclientes.com.br/wp-content/uploads/2016/10/abordagem-do-cliente.jpg",
     titulo: "Abordagens Inovadoras de Vendas",
     subtitulo: "Rompendo com as práticas tradicionais",
     descricao:
@@ -212,13 +201,14 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre abordagens inovadoras de vendas, como estudos de caso de empresas que implementaram com êxito essas estratégias ou estatísticas que destacam a eficácia dessas abordagens. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
     data: "22/09/2023",
-    categoria: "vendas",
+    categoria: "Vendas",
   },
 
   {
     imagem:
       "https://www.unodata.com.br/wp-content/uploads/2022/10/blog-imagem-1-e1588272102314.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
+    imagem2:
+      "https://s2.glbimg.com/BE017b56z41Csr7dbSx86ZlkEFM=/620x430/e.glbimg.com/og/ed/f/original/2019/08/19/gettyimages-943067460.jpg",
     titulo: "Tecnologias Emergentes para 2024",
     subtitulo: "Previsões e oportunidades",
     descricao:
@@ -228,13 +218,14 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre as tecnologias emergentes para 2024, como exemplos de empresas que estão investindo nessas tecnologias ou os benefícios que elas podem trazer para diferentes setores. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
     data: "27/09/2023",
-    categoria: "tecnologia",
+    categoria: "Tecnologia",
   },
 
   {
     imagem:
       "https://lirp.cdn-website.com/616afb97/dms3rep/multi/opt/Auditoria+Financeira-1920w.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
+    imagem2:
+      "https://img.freepik.com/fotos-premium/muitos-graficos-e-lupa-revisando-dados-relatorios-financeiros-e-lupa-fundo-de-reflexao_348487-1165.jpg?w=2000",
     titulo: "Auditoria Financeira Simplificada",
     subtitulo: "Passos para uma auditoria eficaz",
     descricao:
@@ -244,14 +235,15 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre a auditoria financeira, como ferramentas de software úteis para realizar auditorias ou dicas específicas para setores financeiros diferentes. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
     data: "05/09/2023",
-    categoria: "contabilidade",
+    categoria: "Contabilidade",
   },
 
   {
     imagem:
       "https://www.publi.com.br/wp-content/uploads/2020/05/x-estrategias-de-marketing-digital-para-voce-utilizar-nas-redes-sociais-da-sua-empresa-20200427141133.jpg-1.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
-    titulo: "Estratégias de Redes Sociais",
+    imagem2:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBhLsj1-oYgIBWr8-9A75swpeBViWSy7_OEpM-eFo8br512Gl7YuzdVlq0LiKOFs-yiS0&usqp=CAU",
+    titulo: "Estratégias para engajamento nas Redes Sociais",
     subtitulo: "Construindo uma presença sólida",
     descricao:
       "Explore as melhores práticas para utilizar as redes sociais como uma ferramenta eficaz de marketing e engajamento do público.",
@@ -265,8 +257,9 @@ const artigos = [
 
   {
     imagem:
-      "https://img.freepik.com/fotos-gratis/esfera-azul-brilhante-segurada-por-mao-humana-gerada-por-ia_188544-41033.jpg",
-    imagem2: "https://www.pe.senac.br/wp-content/uploads/2019/04/1916.jpg",
+      "https://creci-pi.org.br/wp-content/uploads/2017/12/contratacao-corretora.jpg",
+    imagem2:
+      "https://zenite.blog.br/wp-content/uploads/2021/07/fotolia-547953-subscription-l-1024x718.jpg",
     titulo: "Negociação de Contratos Vencedores",
     subtitulo: "Dicas para fechar acordos bem-sucedidos",
     descricao:
@@ -276,11 +269,13 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre negociação de contratos, como exemplos de negociações bem-sucedidas ou abordagens específicas para resolver conflitos durante negociações. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
     data: "30/09/2023",
-    categoria: "vendas",
+    categoria: "Vendas",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://olhardigital.com.br/wp-content/uploads/2021/03/Highcompressed_989329522-scaled.jpg",
+    imagem2:
+      "https://diariodocomercio.com.br/wp-content/uploads/2022/09/declaracao-imposto-de-renda-contabilidade.jpg",
     titulo: "Imposto de Renda 2023: O que você precisa saber",
     subtitulo: "Novas regras e prazos",
     descricao:
@@ -290,11 +285,13 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre deduções fiscais, documentação necessária e orientações práticas para a declaração de Imposto de Renda.",
     data: "10/01/2023",
-    categoria: "contabilidade",
+    categoria: "Contabilidade",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://ondigitals.com/wp-content/uploads/cach-viet-bai-chuan-seo-10.jpg",
+    imagem2:
+      "https://safiradesign.com.br/wp-content/uploads/2022/06/tecnicas-de-seo-1170x700.jpg",
     titulo: "Tendências de SEO para 2023",
     subtitulo: "Melhore sua classificação nos mecanismos de busca",
     descricao:
@@ -304,11 +301,13 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre ferramentas de SEO úteis, estratégias de link building e exemplos de empresas que obtiveram sucesso com essas táticas.",
     data: "15/02/2023",
-    categoria: "marketing",
+    categoria: "Marketing",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://www.salesforce.com/br/blog/wp-content/uploads/sites/6/2023/06/como-melhorar-a-segmentacao-de-e-mail-marketing201201.jpg",
+    imagem2:
+      "https://admin.ecommercebrasil.com.br/wp-content/uploads/2023/06/85-marketing.jpg.webp",
     titulo: "Estratégias de E-mail Marketing Eficientes",
     subtitulo: "Maximize o ROI com campanhas de e-mail",
     descricao:
@@ -318,11 +317,13 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre as melhores práticas de design de e-mail, taxas de abertura e exemplos de empresas que alcançaram sucesso com suas campanhas de e-mail.",
     data: "20/03/2023",
-    categoria: "marketing",
+    categoria: "Marketing",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://cdn.shopify.com/s/files/1/0788/9687/files/01_mao_entrega_sacola_pela_tela_do_computador_para_outra_mao_segurando_um_cartao_de_credito.jpg?v=1624757057",
+    imagem2:
+      "https://ramper.com.br/wp-content/uploads/2019/09/Como-aumentar-vendas-no-e-commerce-6-dicas-infal%C3%ADveis.jpg",
     titulo: "Vendas no E-commerce: Tendências para 2023",
     subtitulo: "Aprimore sua estratégia de vendas online",
     descricao:
@@ -332,11 +333,14 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre métricas-chave para medir o sucesso no e-commerce, exemplos de marcas de sucesso e estratégias de marketing para e-commerce.",
     data: "05/04/2023",
-    categoria: "vendas",
+    categoria: "Vendas",
   },
+
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://www.kangu.com.br/wp-content/uploads/2022/01/meios-de-pagamento-online.jpg",
+    imagem2:
+      "https://www.kangu.com.br/wp-content/uploads/2022/01/meios-de-pagamento-online.jpg",
     titulo: "Inovações em Pagamentos Online",
     subtitulo: "Facilite as transações para seus clientes",
     descricao:
@@ -346,11 +350,29 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre segurança de pagamentos online, regulamentações relevantes e exemplos de empresas que implementaram com sucesso essas inovações.",
     data: "10/05/2023",
-    categoria: "tecnologia",
+    categoria: "Tecnologia",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem:
+      "https://blog.vetoreditora.com.br/wp-content/uploads/2021/05/como-as-financas-afetam-nosso-comportamento-dentro-da-empresa.jpg",
+    imagem2:
+      "https://liberal.com.br/wp-content/uploads/2020/09/finan%C3%A7as.jpg",
+    titulo: "Gestão Financeira Empresarial",
+    subtitulo: "Dicas para manter suas finanças em ordem",
+    descricao:
+      "Aprenda as melhores práticas de contabilidade e gestão financeira para garantir a saúde financeira de sua empresa.",
+    texto:
+      "A gestão financeira é uma parte crítica de qualquer empresa. Este artigo oferece dicas e orientações essenciais para manter suas finanças empresariais em ordem. De estratégias de orçamento a métodos de contabilidade eficazes, você encontrará conselhos práticos para garantir a estabilidade financeira de sua empresa.",
+    textocomplementar:
+      "No campo 'texto-complementar', você pode adicionar informações adicionais sobre gestão financeira empresarial, como exemplos de empresas que melhoraram suas finanças seguindo as dicas apresentadas. Certifique-se de incluir quatro parágrafos de conteúdo relevante.",
+    data: "10/09/2023",
+    categoria: "Contabilidade",
+  },
+  {
+    imagem1:
+      "https://www.vivendodefreela.com.br/wp-content/uploads/2019/06/finan%C3%A7as-para-aut%C3%B4nomos.jpg",
+    imagem2:
+      "https://amcontabilidadeonline.com.br/wp-content/uploads/2023/02/IMAGEM-BLOG-DPG-18.jpg",
     titulo: "Dicas de Contabilidade para Pequenas Empresas",
     subtitulo: "Mantenha suas finanças sob controle",
     descricao:
@@ -360,11 +382,30 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre ferramentas de contabilidade úteis, formas de reduzir despesas e exemplos de pequenas empresas que obtiveram sucesso com essas dicas.",
     data: "15/06/2023",
-    categoria: "contabilidade",
+    categoria: "Contabilidade",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://www.vivendodefreela.com.br/wp-content/uploads/2019/06/finan%C3%A7as-para-aut%C3%B4nomos.jpg",
+    imagem2:
+      "https://amcontabilidadeonline.com.br/wp-content/uploads/2023/02/IMAGEM-BLOG-DPG-18.jpg",
+    titulo: "Dicas de Contabilidade para Pequenas Empresas",
+    subtitulo: "Mantenha suas finanças sob controle",
+    descricao:
+      "Aprenda estratégias de contabilidade essenciais para o sucesso de pequenas empresas.",
+    texto:
+      "A gestão financeira é crítica para o sucesso de pequenas empresas. Neste artigo, fornecemos dicas valiosas de contabilidade para manter suas finanças sob controle. De planejamento financeiro a orçamento, ajudamos você a tomar decisões informadas e a garantir a saúde financeira de sua empresa.",
+    textocomplementar:
+      "No campo 'texto-complementar', você pode adicionar informações adicionais sobre ferramentas de contabilidade úteis, formas de reduzir despesas e exemplos de pequenas empresas que obtiveram sucesso com essas dicas.",
+    data: "15/06/2023",
+    categoria: "Contabilidade",
+  },
+
+  {
+    imagem1:
+      "https://webcion.com/wp-content/uploads/2022/04/agencia-de-marketing-digital-que-es-facebook-ads-1080x675-1.jpg",
+    imagem2:
+      "https://adsconsultor.com.br/wp-content/uploads/2022/01/saiba-como-medir-resultados-de-marketing-usando-conteudo-interativo_61dae32a95ae0.jpeg",
     titulo: "Estratégias de Anúncios no Facebook",
     subtitulo: "Alcance seu público-alvo no Facebook",
     descricao:
@@ -374,11 +415,13 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre métricas de anúncios no Facebook, melhores práticas de design de anúncios e exemplos de campanhas bem-sucedidas.",
     data: "20/07/2023",
-    categoria: "marketing",
+    categoria: "Marketing",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://treeti.com.br/wp-content/uploads/2019/04/adults-analysis-brainstorming-1661004-1080x675.jpg",
+    imagem2:
+      "https://www.meupositivo.com.br/panoramapositivo/wp-content/uploads/2018/06/199802-como-montar-a-estrutura-de-ti-da-sua-empresa-1.png",
     titulo: "Como Preparar sua Empresa para a Transformação Digital",
     subtitulo: "Ferramentas e estratégias essenciais",
     descricao:
@@ -388,11 +431,45 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre desafios comuns na transformação digital, estudos de caso de empresas que tiveram sucesso e as etapas práticas para implementar a transformação digital.",
     data: "05/08/2023",
-    categoria: "tecnologia",
+    categoria: "Tecnologia",
   },
   {
-    imagem1: "URL_DA_IMAGEM_1",
-    imagem2: "URL_DA_IMAGEM_2",
+    imagem1:
+      "https://treeti.com.br/wp-content/uploads/2019/04/adults-analysis-brainstorming-1661004-1080x675.jpg",
+    imagem2:
+      "https://www.meupositivo.com.br/panoramapositivo/wp-content/uploads/2018/06/199802-como-montar-a-estrutura-de-ti-da-sua-empresa-1.png",
+    titulo: "Como Preparar sua Empresa para a Transformação Digital",
+    subtitulo: "Ferramentas e estratégias essenciais",
+    descricao:
+      "Descubra como sua empresa pode abraçar a transformação digital para se manter competitiva.",
+    texto:
+      "A transformação digital é uma necessidade para empresas que desejam se manter competitivas. Neste artigo, oferecemos insights sobre como preparar sua empresa para a transformação digital. Discutimos ferramentas e estratégias essenciais, desde a migração para a nuvem até a automação de processos, para que você possa abraçar as oportunidades oferecidas pela era digital.",
+    textocomplementar:
+      "No campo 'texto-complementar', você pode adicionar informações adicionais sobre desafios comuns na transformação digital, estudos de caso de empresas que tiveram sucesso e as etapas práticas para implementar a transformação digital.",
+    data: "05/08/2023",
+    categoria: "Tecnologia",
+  },
+  {
+    imagem1:
+      "https://treeti.com.br/wp-content/uploads/2019/04/adults-analysis-brainstorming-1661004-1080x675.jpg",
+    imagem2:
+      "https://www.meupositivo.com.br/panoramapositivo/wp-content/uploads/2018/06/199802-como-montar-a-estrutura-de-ti-da-sua-empresa-1.png",
+    titulo: "Como Preparar sua Empresa para a Transformação Digital",
+    subtitulo: "Ferramentas e estratégias essenciais",
+    descricao:
+      "Descubra como sua empresa pode abraçar a transformação digital para se manter competitiva.",
+    texto:
+      "A transformação digital é uma necessidade para empresas que desejam se manter competitivas. Neste artigo, oferecemos insights sobre como preparar sua empresa para a transformação digital. Discutimos ferramentas e estratégias essenciais, desde a migração para a nuvem até a automação de processos, para que você possa abraçar as oportunidades oferecidas pela era digital.",
+    textocomplementar:
+      "No campo 'texto-complementar', você pode adicionar informações adicionais sobre desafios comuns na transformação digital, estudos de caso de empresas que tiveram sucesso e as etapas práticas para implementar a transformação digital.",
+    data: "05/08/2023",
+    categoria: "Tecnologia",
+  },
+  {
+    imagem1:
+      "https://storage.googleapis.com/meetime-blog/wp-content/uploads/2020/08/Fechamento-de-neg%C3%B3cios-como-construir-efetivamente-seu-discurso-de-vendas-roteiro.png",
+    imagem2:
+      "https://blog.cyrela.com.br/wp-content/uploads/2020/01/original-93f8f48ecf286f96841368ee3b45264b.jpg",
     titulo: "Negociação de Contratos Empresariais: Melhores Práticas",
     subtitulo: "Garanta acordos bem-sucedidos",
     descricao:
@@ -402,7 +479,24 @@ const artigos = [
     textocomplementar:
       "No campo 'texto-complementar', você pode adicionar informações adicionais sobre estratégias avançadas de negociação, táticas de resolução de conflitos e exemplos de contratos empresariais bem-sucedidos.",
     data: "15/09/2023",
-    categoria: "vendas",
+    categoria: "Vendas",
+  },
+
+  {
+    imagem1:
+      "https://ramper.com.br/wp-content/uploads/2019/09/Como-aumentar-vendas-no-e-commerce-6-dicas-infal%C3%ADveis.jpg",
+    imagem2:
+      "https://cdn.shopify.com/s/files/1/0788/9687/files/01_mao_entrega_sacola_pela_tela_do_computador_para_outra_mao_segurando_um_cartao_de_credito.jpg?v=1624757057",
+    titulo: "Vendas no E-commerce: Tendências para 2023",
+    subtitulo: "Aprimore sua estratégia de vendas online",
+    descricao:
+      "Mantenha-se atualizado com as últimas tendências de vendas no e-commerce para aumentar seus resultados.",
+    texto:
+      "O comércio eletrônico continua em ascensão, e é essencial para os varejistas online acompanhar as tendências. Neste artigo, destacamos as principais tendências de vendas no e-commerce para 2023. Desde a personalização da experiência do cliente até o uso de IA para melhorar as recomendações de produtos, mostramos como você pode aprimorar sua estratégia de vendas online e impulsionar o crescimento do seu negócio.",
+    textocomplementar:
+      "No campo 'texto-complementar', você pode adicionar informações adicionais sobre métricas-chave para medir o sucesso no e-commerce, exemplos de marcas de sucesso e estratégias de marketing para e-commerce.",
+    data: "05/04/2023",
+    categoria: "Vendas",
   },
 ];
 
@@ -413,7 +507,7 @@ inputPesquisa.addEventListener("input", function () {
   const termoPesquisa = inputPesquisa.value.toLowerCase();
 
   if (termoPesquisa === "") {
-    resultadosDiv.innerHTML = ""; // Limpa os resultados quando o campo estiver vazio
+    resultadosDiv.innerHTML = ""; 
   } else {
     const resultadosFiltrados = artigos.filter((artigo) =>
       artigo.titulo.toLowerCase().includes(termoPesquisa)
@@ -422,24 +516,6 @@ inputPesquisa.addEventListener("input", function () {
   }
 });
 
-function mostrarResultados(resultados) {
-  resultadosDiv.innerHTML = "";
-
-  if (resultados.length === 0) {
-    resultadosDiv.innerHTML = "Nenhum artigo encontrado.";
-  } else {
-    resultados.forEach((artigo) => {
-      const link = document.createElement("a");
-      link.href = "artigo.html?titulo=" + encodeURIComponent(artigo.titulo);
-      link.textContent = artigo.titulo;
-      link.style.display = "block"; // Exibir os itens um abaixo do outro
-      link.style.textDecoration = "none"; // Remover sublinhado
-      link.style.color = "#000"; // Cor preta
-
-      resultadosDiv.appendChild(link);
-    });
-  }
-}
 
 function mostrarResultados(resultados) {
   resultadosDiv.innerHTML = "";
@@ -447,20 +523,23 @@ function mostrarResultados(resultados) {
   if (resultados.length === 0) {
     resultadosDiv.innerHTML = "Nenhum artigo encontrado.";
   } else {
-    resultados.forEach((artigo) => {
+    const resultadosExibidos = resultados.slice(0, 3);
+
+    resultadosExibidos.forEach((artigo) => {
       const link = document.createElement("a");
       link.href = "artigo.html?titulo=" + encodeURIComponent(artigo.titulo);
       link.textContent = artigo.titulo;
-      link.style.display = "block"; // Exibir os itens um abaixo do outro
-      link.style.textDecoration = "none"; // Remover sublinhado
-      link.style.color = "#000"; // Cor preta
+      link.style.display = "block"; 
+      link.style.textDecoration = "none";
+      link.style.color = "#a1a1a1"; 
 
       link.addEventListener("click", function () {
-        // Armazenar os dados do artigo em localStorage
         localStorage.setItem("artigoSelecionado", JSON.stringify(artigo));
       });
 
+    
       resultadosDiv.appendChild(link);
     });
   }
 }
+

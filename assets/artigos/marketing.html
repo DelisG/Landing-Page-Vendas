@@ -46,7 +46,7 @@
             <nav class="navbar px-5 navbar-expand-sm navbar-light">
                 <div class="container-fluid">
 
-                   <a class="navbar-brand m-0" href="../../index.html"><img
+                    <a class="navbar-brand m-0" href="../../index.html"><img
                             src="../images/logo.png" width="180" alt></a>
                     <button class="navbar-toggler border-0" type="button"
                         data-bs-toggle="collapse"
@@ -58,7 +58,7 @@
                     <div class="collapse navbar-collapse"
                         id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link ms-3"
+                            <a class="nav-link ms-3 text-danger"
                                 href="marketing.html">Marketing</a>
                             <a class="nav-link ms-3"
                                 href="tecnologia.html">Tecnologia</a>
@@ -75,80 +75,21 @@
         <main>
 
             <!-- cards -->
-            <div id="cards" class="container-fluid text-dark bg-light">
-                <div class="row">
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="https://contasemrevista.com.br/wp-content/uploads/2018/06/5dda66589df4a21b074d6a19812ecf4a-1024x682.jpg">
-                                <p class="category">Categoria</p>
+            <div id="cards" class="container-fluid">
+                <div class="row row-col gap-0 container" id="cardsContainer1">
 
-                            </div>
+                    <!-- <div class="container ">
+                    </div> -->
 
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="../artigos/ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
+                    <div id="cardsContainer">
+                        <!-- Os cards serão adicionados aqui -->
                     </div>
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="https://contasemrevista.com.br/wp-content/uploads/2018/06/5dda66589df4a21b074d6a19812ecf4a-1024x682.jpg">
-                                <p class="category">Categoria</p>
 
-                            </div>
-
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="../artigos/ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="https://contasemrevista.com.br/wp-content/uploads/2018/06/5dda66589df4a21b074d6a19812ecf4a-1024x682.jpg">
-                                <p class="category">Categoria</p>
-
-                            </div>
-
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="../artigos/ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-12">
                         <div id="verMaisContainer"
                             class=" rounded-3 div-artigo d-flex justify-content-center">
-                            <button id="verMaisBtn" class="botao-vermelho-medio">Carregar
-                                Mais</button>
+                            <span id="verMaisBtn"></span>
                         </div>
-                    </div>
-                    <div id="cardsContainer">
-                        <!-- Os cards serão adicionados aqui -->
                     </div>
                 </div>
             </div>
@@ -169,6 +110,7 @@
             <div class=" row-col-small  py-3">
                 <div
                     class="flex-column d-flex justify-content-center font-small">
+
                     <div
                         class="flex-row d-flex justify-content-center align-items-center  ">
                         <a href="https://www.anexoconsultoria.com.br/"><img
@@ -246,6 +188,75 @@
             </div>
         </footer>
 
-        <script src="../js/artigos.js"></script>
+        <!-- <script src="../js/artigos.js"></script> -->
+        <script src="../js/index.js"></script>
+        <script>
+        function renderizarCardsMarketing() {
+            const container = document.getElementById('cardsContainer1');
+
+            const artigosMarketing = artigos.filter(artigo => artigo.categoria === "Marketing");
+
+            artigosMarketing.forEach(artigo => {
+                const card = document.createElement('div');
+                card.classList.add('col-md-4', 'd-flex', 'mb-2');
+
+                card.innerHTML = `
+                    <div class="card rounded-3 elevacao div-artigo">
+                        <div class="card-body card-artigo">
+                            <img src="${artigo.imagem}">
+                            <p class="category">${artigo.categoria}</p>
+                        </div>
+                        <div class="p-4">
+                            <h4>${artigo.titulo}</h4>
+                            <p class="py-2">${artigo.descricao}</p>
+                            <a href="javascript:void(0);" class="text-decoration-none" onclick="exibirDetalhesArtigo(${JSON.stringify(artigo)})">Ver mais</a>
+                        </div>
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        function exibirDetalhesArtigo(artigo) {
+            const container = document.getElementById('cardsContainer1');
+            container.innerHTML = '';
+
+            const detalhesContainer = document.createElement('div');
+            detalhesContainer.classList.add('col-md-12', 'mt-5');
+
+            detalhesContainer.innerHTML = `
+                <div>
+                    <h3><strong>${artigo.titulo}</strong></h3>
+                    <img
+                        src="${artigo.imagem1}"
+                        alt="imagem artigo" class="p-3"
+                        style="width: 100%; height: 500px;">
+                </div>
+                
+                <div class="col-md d-flex justify-content-around flex-column p-3">
+                    <h5>${artigo.subtitulo}</h5>
+                    <p>${artigo.descricao}</p>
+                    <p>texto</p>
+                    <div class="artigos-rodape">
+                    
+                    </div>
+                </div>
+                
+                <div class="col-md d-flex justify-content-around flex-column p-3">
+                    <p>${artigo.textocomplementar}</p>
+                    
+                    <div class="">
+                        <p class="font-small">${artigo.data}</p>
+                    </div>
+                </div>
+            `;
+
+            container.appendChild(detalhesContainer);
+        }
+
+        window.addEventListener('load', renderizarCardsMarketing);
+
+    </script>
     </body>
 </html>

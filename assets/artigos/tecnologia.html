@@ -46,7 +46,7 @@
             <nav class="navbar px-5 navbar-expand-sm navbar-light">
                 <div class="container-fluid">
 
-                   <a class="navbar-brand m-0" href="../../index.html"><img
+                    <a class="navbar-brand m-0" href="../../index.html"><img
                             src="../images/logo.png" width="180" alt></a>
                     <button class="navbar-toggler border-0" type="button"
                         data-bs-toggle="collapse"
@@ -60,7 +60,7 @@
                         <div class="navbar-nav ms-auto">
                             <a class="nav-link ms-3"
                                 href="marketing.html">Marketing</a>
-                            <a class="nav-link ms-3"
+                            <a class="nav-link ms-3  text-danger"
                                 href="tecnologia.html">Tecnologia</a>
                             <a class="nav-link ms-3"
                                 href="contabilidade.html">Contabilidade</a>
@@ -75,81 +75,21 @@
         <main>
 
             <!-- cards -->
-            <!-- cards -->
-            <div id="cards" class="container-fluid text-dark bg-light">
-                <div class="row">
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="https://vivomeunegocio.com.br/vivo-b2b/wp-content/uploads/2020/05/19142057/transformacao-digital-escritorios.jpg">
-                                <p class="category">Categoria</p>
+            <div id="cards" class="container-fluid">
+                <div class="row row-col gap-0 container" id="cardsContainer1">
 
-                            </div>
+                    <!-- <div class="container ">
+                    </div> -->
 
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="../artigos/ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
+                    <div id="cardsContainer">
+                        <!-- Os cards serão adicionados aqui -->
                     </div>
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="https://vivomeunegocio.com.br/vivo-b2b/wp-content/uploads/2020/05/19142057/transformacao-digital-escritorios.jpg">
-                                <p class="category">Categoria</p>
 
-                            </div>
-
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="../artigos/ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 ">
-                        <div
-                            class="card rounded-3 elevacao bg-light text-dark div-artigo">
-                            <div class="card-body card-artigo">
-                                <img src="https://vivomeunegocio.com.br/vivo-b2b/wp-content/uploads/2020/05/19142057/transformacao-digital-escritorios.jpg">
-                                <p class="category">Categoria</p>
-
-                            </div>
-
-                            <div class="p-4">
-                                <h4 class=" ">Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit </h4>
-                                <p class="py-2">Lorem ipsum dolor
-                                    sit amet, consectetur adipisicing elit lorem
-                                    ipsum dolor
-                                    sit amet, consectetur adipisicing elit </p>
-                                <a href="../artigos/ver-mais.html"
-                                    class="text-decoration-none">Ver mais</a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-12">
                         <div id="verMaisContainer"
                             class=" rounded-3 div-artigo d-flex justify-content-center">
-                            <button id="verMaisBtn" class="botao-vermelho-medio">Carregar
-                                Mais</button>
+                            <span id="verMaisBtn" ></span>
                         </div>
-                    </div>
-                    <div id="cardsContainer">
-                        <!-- Os cards serão adicionados aqui -->
                     </div>
                 </div>
             </div>
@@ -170,6 +110,7 @@
             <div class=" row-col-small  py-3">
                 <div
                     class="flex-column d-flex justify-content-center font-small">
+
                     <div
                         class="flex-row d-flex justify-content-center align-items-center  ">
                         <a href="https://www.anexoconsultoria.com.br/"><img
@@ -248,5 +189,39 @@
         </footer>
 
         <script src="../js/artigos.js"></script>
+        <script src="../js/index.js"></script>
+        <script>
+
+        function renderizarCardsMarketing() {
+            const container = document.getElementById('cardsContainer1');
+
+            const artigosMarketing = artigos.filter(artigo => artigo.categoria === "Tecnologia");
+
+            artigosMarketing.forEach(artigo => {
+                const card = document.createElement('div');
+                card.classList.add('col-md-4', 'd-flex', 'mb-2');
+
+                card.innerHTML = `
+                <div class="card rounded-3 elevacao div-artigo">
+                    <div class="card-body card-artigo">
+                        <img src="${artigo.imagem2}">
+                        <p class="category">${artigo.categoria}</p>
+                    </div>
+                    <div class="p-4">
+                        <h4>${artigo.titulo}</h4>
+                        <p class="py-2">${artigo.descricao}</p>
+                        <a href="${artigo.link}" class="text-decoration-none">Ver mais</a>
+                    </div>
+                </div>
+
+                `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // Chama a função quando a página carrega
+        window.addEventListener('load', renderizarCardsMarketing);
+        </script>
     </body>
 </html>
