@@ -1,7 +1,8 @@
 
 # <img src="https://cdn-icons-png.flaticon.com/512/1970/1970005.png" alt="Ícone da Casa Inteligente" width="50" align="center">  Casa Inteligente 
 
-<a href="https://delisg.github.io/Landing-Page-Vendas/" style="background-color: #325b84; color: white; padding: 8px 12px; text-decoration: none; display: inline-block; border-radius: 5px; text-align: center;">Visite o Projeto</a>
+ <h2  style="color: green; text-decoration: none;"><strong><a href="https://delisg.github.io/Landing-Page-Vendas/"> 🎥 Visualizar Projeto no Bowser</a></strong></h2>
+
 
 Landing page oferece informações e recursos relacionados ao seu sistema de automação residencial.
 
