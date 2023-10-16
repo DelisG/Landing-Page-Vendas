@@ -11,7 +11,7 @@
   --first-color-send: #1e364f;
   --title-color: #001933;
   --text-color: #5b5757;
-  --text-color-light: #002347;
+  --text-color-light: #a6a6a6;
   --body-color: #fefbfb;
   --container-color: #fff;
 
@@ -197,7 +197,7 @@ img {
 }
 
 .nav__logo:hover {
-  color: var(--first-color);
+  color: var(--title-color);
 }
 
 .nav__link {
