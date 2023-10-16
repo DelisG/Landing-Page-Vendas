@@ -491,7 +491,7 @@ img {
 .footer__copy {
   text-align: center;
   font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  color: var(--text-color);
   margin-top: 4rem;
 }
 
