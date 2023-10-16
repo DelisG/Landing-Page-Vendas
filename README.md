@@ -23,7 +23,7 @@ Desenvolvida  para Oferecer informações e recursos relacionados ao seu sistema
 - JavaScript: O JavaScript é usado para adicionar funcionalidades dinâmicas à página, como a opção de pesquisa.
 Arquitetura da aplicação:
 
-# A página é composta por dois componentes principais:
+## componentes principais:
 
 Componente de exibição de produtos: Este componente é responsável por exibir a lista de produtos.
 Componente de pesquisa: Este componente é responsável por permitir que o usuário pesquise por produtos.
