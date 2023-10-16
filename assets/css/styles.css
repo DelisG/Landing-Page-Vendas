@@ -6,9 +6,9 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #003366;
+  --first-color: #f1c232;
   --first-color-alt: #194775;
-  --first-color-send: #325b84;
+  --first-color-send: #1e364f;
   --title-color: #001933;
   --text-color: #5b5757;
   --text-color-light: #002347;
@@ -634,7 +634,7 @@ img {
 
 
 .border{
-  background-color: #b2c1d1;
+  background-color: #3261f1;
   padding: 4px 8px;
   border-radius: 3px;
 }
