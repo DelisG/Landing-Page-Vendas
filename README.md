@@ -6,7 +6,7 @@
 O projeto Casa Inteligente visa tornar sua casa mais inteligente e eficiente. Nossa landing page de vendas fornece informações detalhadas sobre os recursos e benefícios do sistema, bem como a possibilidade de entrar em contato conosco para obter mais informações.
 
 
-# Descrição técnica
+## Descrição técnica
 
 Desenvolvida  para Oferecer informações e recursos relacionados ao seu sistema de automação residencial, atrair os clientes e chamar para a ação (CTA), com alta conversão. A página é composta pelos seguintes elementos:
 
@@ -23,7 +23,7 @@ Desenvolvida  para Oferecer informações e recursos relacionados ao seu sistema
 - JavaScript: O JavaScript é usado para adicionar funcionalidades dinâmicas à página, como a opção de pesquisa.
 Arquitetura da aplicação:
 
-## componentes principais:
+## Componentes principais:
 
 Componente de exibição de produtos: Este componente é responsável por exibir a lista de produtos.
 Componente de pesquisa: Este componente é responsável por permitir que o usuário pesquise por produtos.
